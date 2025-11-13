@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        background-image: url("/1.jpg");
+            background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+        width: 100%;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.374);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header .logo{
+    display: flex;
+    gap: 10px;
+    animation: alaa 2s  ease;
+}
+@keyframes alaa {
+    0%{
+        transform: skew(30deg);
+    }
+}
+header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+header ul{
+    display: flex;
+}
+header li{
+    list-style: none;
+    padding: 5px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+header a:hover{
+    color: rgb(5, 8, 98);
+}
+a:focus{
+    color: rgb(23, 22, 24);
+}
+.main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: rgba(7, 11, 92, 0.966);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  
+}
+.icons i{
+    background-color: rgba(249, 250, 253, 0.566);
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.icons i:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+.parent{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.left{
+    text-align: center;
+    background-color: rgba(120, 111, 111, 0.41);
+    width: 800px;
+    height: 550px;
+    border-radius: 60px;
+    animation: looah 2s ease;
+    color: rgba(255, 255, 255, 0.908);
+}
+@keyframes looah{
+    0%{
+        transform: translateX(-800px);
+    }
+}
+.left img{
+    padding: 20px;
+    width: 680px;
+    height: 450px;
+    border-radius: 50px;
+}
+.left h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.right{
+    padding: 50px;
+    background-color:  rgba(120, 111, 111, 0.41);
+    width: 800px;
+    height: 550px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    animation: lolah 2s ease;
+    color: rgba(255, 255, 255, 0.908);
+}
+@keyframes lolah{
+    0%{
+        transform: translateX(800px);
+    }
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 30px;
+}
+.card1{
+    background-color: rgba(35, 35, 34, 0.449);
+    color: rgba(255, 255, 255, 0.908);
+    width: 600px;
+    height: 550;
+    border-radius: 50px;
+    box-shadow: 10px 10px 200px black;
+    overflow: hidden;
+    transition: transform 1s ease;
+}
+ .card1:hover{
+    transform: translateY(50px);
+}
+.cards img{
+    border-radius: 20px;
+    width: 450px;
+    height: 400px;
+    margin: 10px;
+}
+.cards p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+button i{
+    border-radius: 50%;
+    color: black;
+}
+.cards button{
+    width: 150px;
+    height: 60px;
+    background-image:radial-gradient(circle, rgba(250, 183, 0, 0.979),rgb(239, 135, 7));
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 1s ease;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
