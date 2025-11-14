@@ -15,9 +15,10 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.374);
+    background-color: rgba(24, 24, 26, 0.374);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0 20px 0;
 }
 header .logo{
     display: flex;
@@ -26,7 +27,7 @@ header .logo{
 }
 @keyframes alaa {
     0%{
-        transform: skew(30deg);
+        transform: skew(50deg);
     }
 }
 header img{
@@ -39,7 +40,7 @@ header ul{
 }
 header li{
     list-style: none;
-    padding: 5px;
+    padding: 10px;
 }
 li a{
     text-decoration: none;
@@ -66,6 +67,11 @@ a:focus{
     font-weight: bold;
     margin-top: 20px;
 }
+.main h1,h2,h3{
+    color: rgb(247, 248, 250);
+    text-shadow: 2px 2px 8px black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .icons {
     display: flex;
     justify-content: center;
@@ -75,7 +81,13 @@ a:focus{
 .icons i{
     background-color: rgba(249, 250, 253, 0.566);
     border-radius: 50%;
+    animation: aloo 3s infinite;
     transition: transform 0.3s, background-color 0.3s;
+}
+@keyframes aloo{
+    0%{
+        transform: rotate(360deg);
+    }
 }
 .icons i:hover{
     background-color: rgb(255, 255, 255);
@@ -86,6 +98,7 @@ a:focus{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+   
 }
 .left{
     text-align: center;
@@ -95,6 +108,10 @@ a:focus{
     border-radius: 60px;
     animation: looah 2s ease;
     color: rgba(255, 255, 255, 0.908);
+    transition: transform 1s ease;
+}
+.left:hover{
+    transform: translateY(-50px);
 }
 @keyframes looah{
     0%{
@@ -111,6 +128,16 @@ a:focus{
     font-size: 20px;
     font-weight: bold;
 }
+.center{
+    display: flex;
+    font-size: 60px;  
+    color: rgba(255, 255, 255, 0.655);
+    align-items: center;
+    transition: transform 1s ease;
+}
+.center:hover{
+    transform: scale(1.5);
+}
 .right{
     padding: 50px;
     background-color:  rgba(120, 111, 111, 0.41);
@@ -123,6 +150,10 @@ a:focus{
     font-weight: bold;
     animation: lolah 2s ease;
     color: rgba(255, 255, 255, 0.908);
+    transition: transform 1s ease;
+}
+.right:hover{
+    transform: translateY(-50px);
 }
 @keyframes lolah{
     0%{
@@ -134,13 +165,23 @@ a:focus{
     justify-content: center;
     text-align: center;
     gap: 20px;
-    padding: 30px;
+
+}
+.cardsleft{
+      animation: looah 2s ease;
+      display: flex;
+      gap: 20px;
+}
+.cardsright{
+     animation: lolah 2s ease;
+     display: flex;
+     gap: 20px;
 }
 .card1{
-    background-color: rgba(35, 35, 34, 0.449);
+    background-color: rgba(251, 232, 231, 0.238);
     color: rgba(255, 255, 255, 0.908);
-    width: 600px;
-    height: 550;
+    width: 550px;
+    height: 500;
     border-radius: 50px;
     box-shadow: 10px 10px 200px black;
     overflow: hidden;
@@ -164,14 +205,24 @@ button i{
     color: black;
 }
 .cards button{
-    width: 150px;
+    width: 120px;
     height: 60px;
-    background-image:radial-gradient(circle, rgba(250, 183, 0, 0.979),rgb(239, 135, 7));
+    background-image:radial-gradient(circle, rgba(182, 73, 6, 0.979),rgb(239, 135, 7));
     color: white;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    transition: background-color 1s ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    animation: button 1s ease;
+}
+
+@keyframes button{
+    0%{
+        transform: skew(50deg);
+    }
+    
 }
 footer{
     background-color: black;
@@ -181,4 +232,16 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 75px 0;
+}
+footer i{
+    margin: 0 10px;
+    transition: transform 1s ease;
+    cursor: progress
+}
+footer i:hover{
+    transform: scale(1.5);
+}
+.back{
+    background-color: rgba(0, 0, 0, 0.158);
 }
